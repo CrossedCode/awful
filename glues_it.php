@@ -1,3 +1,20 @@
+## WARNING - PLEASE READ ##
+# I DID NOT WROTE THIS CODE.
+# I'M SHARING IT HERE FOR YOU TO BENEFIT.
+# THIS CODE WAS FOUND ON A WORDPRESS PLUGIN.
+
+# Wordpress was returning an error which said like this:
+# Fatal error: Cannot redeclare glues_it() (previously declared in
+
+# I went ahead and did some research and found out that the person who
+# was hired to edit the site of my old client was using plugins with this
+# sketchy Wordpress function. I believe that these are premium plugins
+# being pirated.
+# I’m still looking out what it really does but for the time being I told
+# the site owner to get rid of the plugins with the function.
+
+## END OF WARNING ##
+
 function glues_it($string)
 {
     $glue_pre = sanitize_key('s   t   r _   r   e   p   l a c e');
