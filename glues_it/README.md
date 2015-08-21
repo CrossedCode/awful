@@ -103,7 +103,7 @@ function wp_en_four()
 }
 ```
 
-When we run strrev on this part of the code we get the following =:
+When we run strrev on this part of the code we get the following:
 ```sh
 function wp_en_four()
 {
