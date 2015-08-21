@@ -32,7 +32,7 @@ jqeury.org/wp_ping.php?dname=wpd&tname=wpt&urliz=urlig
 What does it does? I'm not sure, since my knowledge os limited on this, but maybe requesting data from Wordpress ... something like the site url ... not sure yet
 
 #### Update 5
-Take a look at "jqeury.org/jquery-latest.js" on line 56 after using jsbeautifier on it, this was the result: [awful/jquery-latest.js](http://git.io/vs461)
+Take a look at "[jqeury.org/jquery-latest.js](http://git.io/vs461)" on line 56 after using jsbeautifier on it, this was the result: [awful/jquery-latest.js](http://git.io/vs461)
 
 At the beginning it looks like a regular jQuery Javascript file, but take a look at the lines 3349-3368, there is where the cute part begins. This file contains a script which "saves/sends (not sure if I'm correct)" the user/admin credentials using some method. I'm still looking.
 
