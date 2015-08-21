@@ -7,4 +7,4 @@ Below the scripts/code names (I have named some by the variables/functions they 
 
 | Sketchy Code | Platform         | Explanation         | Original Source Code Link |
 | ------------ | ---------------- | ------------------- | ------------------------- |
-| glues_it()   | Wordpress Plugin | http://git.io/vs4Dk | http://git.io/vsWsl       |
+| [glues_it()](https://github.com/CrossedCode/awful/tree/master/glues_it)   | Wordpress Plugin | http://git.io/vs4Dk | http://git.io/vsWsl       |
