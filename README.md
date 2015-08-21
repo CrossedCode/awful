@@ -5,6 +5,6 @@ Here I'll be posting awful things like scripts & code that I believe could be ma
 
 Below the scripts/code names (I have named some by the variables/functions they use), the platform where I found it and a link to the source code (withing GitHub of course).
 
-| Sketchy Code  | Platform         | Source Code Link    |
-| ------------- | ---------------- | ------------------- |
-| glues_it()    | Wordpres Plugin  | http://git.io/vsWsl |
+| Sketchy Code | Platform         | Explanation         | Original Source Code Link |
+| ------------ | ---------------- | ------------------- | ------------------------- |
+| glues_it()   | Wordpress Plugin | http://git.io/vs4Dk | http://git.io/vsWsl       |
