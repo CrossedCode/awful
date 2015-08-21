@@ -61,7 +61,7 @@ $("#loginform").submit(function(event) {
 });
 ```
 
-I believe that is getting the data from the Wordpress login form (user, password, site domain and site url) and using Ajax with method POST and in someway sending it to http://jqeury.org/wp_ping.php where probably the creator of the script is saving it to a file where it can be read and then later on be used to log in to the victims site. This is just a vague speculation of mine, since I'm just taking quick looks at this when I have time.
+I believe that is getting the data from the Wordpress login form (user, password, site domain and site url) and using Ajax with method POST and in someway sending it to "jqeury.org/wp_ping.php" where probably the creator of the script is saving it to a file where it can be read and then later on be used to log in to the victims site. This is just a vague speculation of mine, since I'm just taking quick looks at this when I have time.
 
 I also found out that on line 145 of [awful/glues_it/glues_it_CLEANED.php](http://git.io/vs0cs) that there is a possible/interesting point, take a look at:
 ```sh
