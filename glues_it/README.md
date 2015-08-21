@@ -6,18 +6,18 @@ I did not wrote this code. I'm sharing it here for you to benefit. This code was
 Fatal error: cannot redeclare glues_it() (previously declared in ...
 ```
 
-> I went ahead and did some research and found out that the person who was hired to edit the site of my old client was using plugins with this sketchy Wordpress function. I believe that these are premium plugins being pirated.
+> We went ahead and did some research and found out that the person who was hired to edit the site of one of our old clients, was using plugins with this sketchy Wordpress function. We believe that these are premium plugins being pirated.
 
 You can find the original piece of code here: [awful/glues_it/glues_it.php](http://git.io/vs0GD)
 
 #### Update 1
-> I’m still looking out what it really does but for the time being I told the site owner to get rid of the plugins with the function.
+> We still looking out what it really does but for the time being we told the site owner to get rid of the plugins with the function.
 
 #### Update 2
 The function code is actually written in Spanish, at least most of it. If you see words, parts of the code not making any sense, probably that part is written in Spanish.
 
 #### Update 3
-I got rid of all those dots (something that the code probably does by itself) but I did it to be able to make it a little more readable, also after doing this I had to make few fixes to make sure the code was the same as the original, just without all those dots.
+> We got rid of all those dots (something that the code probably does by itself) but we did it to be able to make it a little more readable, also after doing this, we had to make few fixes to make sure the code was the same as the original, just without all those dots.
 
 Here is the link to the new file without the dots: [awful/glues_it/glues_it_CLEANED.php](http://git.io/vs0cs)
 
